@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {Container, Row, Col, Button, Navbar, Nav, Form, NavDropdown, FormControl} from 'react-bootstrap';
 
 
@@ -7,23 +8,24 @@ class Homepage extends Component {
 
 render (){
     return(
+      <Router>
         <Navbar bg="dark" variant = "dark" expand="lg">  
-        <Navbar.Brand href="#home">
+            <Navbar.Brand href="#home">
+            
+            <img
+                alt=""
+                src="https://images.squarespace-cdn.com/content/5ba145d73e2d09c1cea74e0f/1552208483166-JZ0BOAIBBKTRKSR9JH5X/caiamy-white.jpg?format=1000w&content-type=image%2Fjpeg"
+                width="200"
+                height="70"
+                className="d-inline-block align-top"
+            />
         
-        <img
-            alt=""
-            src="https://images.squarespace-cdn.com/content/5ba145d73e2d09c1cea74e0f/1552208483166-JZ0BOAIBBKTRKSR9JH5X/caiamy-white.jpg?format=1000w&content-type=image%2Fjpeg"
-            width="200"
-            height="70"
-            className="d-inline-block align-top"
-        />
-     
-    </Navbar.Brand>
+            </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-           
+            <Nav.Link href="#Homepage">Home</Nav.Link>
+            <Nav.Link href="#About">About</Nav.Link>
             <NavDropdown title="Services" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Residential Cleaning</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">Commercial Cleaning</NavDropdown.Item>
@@ -36,6 +38,10 @@ render (){
           </Form>
         </Navbar.Collapse>
       </Navbar>
+      <Switch>
+         <Route path="/Homepage" component={Homepage} />   
+      </Switch>
+    </Router>
          )
     }
 }
