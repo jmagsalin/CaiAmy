@@ -7,7 +7,6 @@ import Homepage from "./Homepage.js"
 function App() {
   return (
     <div className="App">
-      
       <Routes />
     </div>
   );

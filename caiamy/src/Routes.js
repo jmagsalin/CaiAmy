@@ -10,8 +10,9 @@ class Routes extends Component {
 render (){
     return(
       <Router>
+        <div className = "navBar">
         <Navbar bg="dark" variant = "dark" expand="lg">  
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="Homepage">
             
             <img
                 alt=""
@@ -41,9 +42,10 @@ render (){
       </Navbar>
       <Switch>
         <Route exact path="/" component={Homepage} />
-        <Route path="/#Homepage" component={Homepage} />
+        <Route path="/Homepage" component={Homepage} />
         <Route path="/About" component={About} />
       </Switch>
+      </div>
     </Router>
          )
     }

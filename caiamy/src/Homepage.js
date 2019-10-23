@@ -1,47 +1,55 @@
 import React, {Component} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Container, Row, Col, Button, Navbar, Nav, Form, NavDropdown, FormControl} from 'react-bootstrap';
+import {Container, Row, Col, Button, Navbar, Nav, Form, NavDropdown, FormControl, Carousel} from 'react-bootstrap';
 
 
 class Homepage extends Component {
 
 render (){
     return(
-      <Router>
-        <Navbar bg="dark" variant = "dark" expand="lg">  
-            <Navbar.Brand href="#home">
-            
-            <img
-                alt=""
-                src="https://images.squarespace-cdn.com/content/5ba145d73e2d09c1cea74e0f/1552208483166-JZ0BOAIBBKTRKSR9JH5X/caiamy-white.jpg?format=1000w&content-type=image%2Fjpeg"
-                width="200"
-                height="70"
-                className="d-inline-block align-top"
-            />
-        
-            </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#Homepage">Home</Nav.Link>
-            <Nav.Link href="#About">About</Nav.Link>
-            <NavDropdown title="Services" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Residential Cleaning</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Commercial Cleaning</NavDropdown.Item>
-            </NavDropdown>
-            <Nav.Link href="#link">Schedule Appointment</Nav.Link>
-          </Nav>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Navbar.Collapse>
-      </Navbar>
-      <Switch>
-         <Route path="/Homepage" component={Homepage} />   
-      </Switch>
-    </Router>
+      <div className = "carousel">
+      <Carousel>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      width={900} height={670} alt="900x500"
+      src="https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839183_1280.jpg"
+      alt="Bedroom" 
+    />
+    <Carousel.Caption>
+      <h3>Residential Cleaning</h3>
+      <p>We thoroughly clean all bedrooms, bathrooms, living spaces, and kitchens.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      width={900} height={670} alt="900x500"
+      src="https://cdn.pixabay.com/photo/2015/05/15/14/22/conference-room-768441_1280.jpg"
+      alt="Conference Room"
+    />
+
+    <Carousel.Caption>
+      <h3>Commercial Building Cleaning</h3>
+      <p>We ensure that every section of your office building is clean.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-100"
+      width={900} height={670} alt="900x500"
+      src="https://cdn.pixabay.com/photo/2016/10/16/10/30/office-space-1744803_1280.jpg"
+      alt="Office"
+    />
+
+    <Carousel.Caption>
+      <h3>General Cleaning</h3>
+      <p> From General Cleaning, Green Cleaning, Post Construction Clean Up, we can clean mostly anything.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+</div>
          )
     }
 }
