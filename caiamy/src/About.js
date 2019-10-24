@@ -8,7 +8,7 @@ class About extends Component {
        <br></br>
        <br></br>
       <div>
-        <h4 className = "cats">About Our Services…</h4>
+        <h3 className = "cats">Our Core Values…</h3>
         <br></br>
  
         <h4 className = "cats">Professionalism</h4>
