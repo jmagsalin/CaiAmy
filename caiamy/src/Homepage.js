@@ -14,7 +14,7 @@ render (){
     <img
       className="d-block w-100"
       width={900} height={670} alt="900x500"
-      src="https://cdn.pixabay.com/photo/2016/11/19/13/06/bed-1839183_1280.jpg"
+      src="https://cdn.pixabay.com/photo/2016/03/26/22/19/bedroom-1281580_1280.jpg"
       alt="Bedroom" 
     />
     <Carousel.Caption>

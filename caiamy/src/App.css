@@ -23,6 +23,8 @@
 
 .navBar {
   font-size: 20px;
+  background-color: black;
+  
 }
 
 .carousel {
@@ -30,3 +32,13 @@
    flex-direction: column;
    color: yellow
   }
+ 
+.cats {
+  font-style: bold;
+  text-align: left;
+}
+
+.aboutText {
+  text-align: left;
+  font-size: 20px;
+}
