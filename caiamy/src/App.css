@@ -42,3 +42,20 @@
   text-align: left;
   font-size: 20px;
 }
+
+.footer {
+  background-color: black;
+  color: orange;
+  
+}
+
+.footerp {
+  color: #E19B24;
+  text-align: match-parent;
+}
+
+.footerb {
+  font-size: 100px;
+  font-style: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}

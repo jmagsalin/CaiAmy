@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {Container, Row, Col, Button, Navbar, Nav, Form, NavDropdown, FormControl} from 'react-bootstrap';
 import Homepage from "./Homepage"
@@ -9,6 +8,7 @@ class Routes extends Component {
 
 render (){
     return(
+      <React.Fragment>
       <Router>
         <div className = "navBar">
         <Navbar variant = "dark" expand="lg">  
@@ -47,6 +47,18 @@ render (){
         <Route path="/About" component={About} />
       </Switch>     
     </Router>
+    <footer className = "footer">
+      <br></br>
+      <Button variant="outline-warning" href = "Appointment" className= "footerb" size = "lg">Schedule an Appointment</Button><br></br>
+      <img
+                  alt=""
+                  src="https://images.squarespace-cdn.com/content/5ba145d73e2d09c1cea74e0f/1552208483166-JZ0BOAIBBKTRKSR9JH5X/caiamy-white.jpg?format=1000w&content-type=image%2Fjpeg"
+                  width="220"
+                  height="75"
+                  className="d-inline-block align-top"
+              />
+    </footer>
+  </React.Fragment>
          )
     }
 }
