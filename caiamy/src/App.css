@@ -28,6 +28,9 @@
   
 }
 
+.navDrop {
+  color:#E19B24;
+}
 .carousel {
    align-content: center;
    flex-direction: column;
@@ -42,6 +45,13 @@
 .aboutText {
   text-align: left;
   font-size: 20px;
+}
+
+.about {  
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: 100%;
 }
 
 .footer {
@@ -59,4 +69,20 @@
   font-size: 100px;
   font-style: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cardTitle {
+  background-color: #E19B24;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 70px;
+}
+
+.cardList {
+  background-color: yellow;
+  color: #E19B24;
+  font-size: large;
+  font-style: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-block-color: #E19B24;
 }

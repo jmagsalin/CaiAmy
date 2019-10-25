@@ -7,7 +7,7 @@ class About extends Component {
      <Container>
        <br></br>
        <br></br>
-      <div>
+      <div className="about">
         <h3 className = "cats">Our Core Values…</h3>
         <br></br>
  
@@ -22,7 +22,7 @@ class About extends Component {
             
         <h4 className = "cats">Consistency</h4>
             <p className = "aboutText">CAIAMY wants to continuously be your service provider. We have our own service check list to make sure we provide 
-            the same high quality services the same way all the time, every time.</p>
+            the same high quality services the same way all the time, every time.</p><br></br>
       </div>
      </Container>
     )
