@@ -29,7 +29,7 @@ render (){
           <Nav className="mr-auto">
             <Nav.Link href="Homepage" style ={{color: "#E19B24"}}>Home</Nav.Link>
             <Nav.Link href="About" style ={{color: "#E19B24"}}>About</Nav.Link>
-            <NavDropdown  className = "navDrop" title="Services" style = {{color: "#E19B24", backgroundColor: "black"}}>
+            <NavDropdown  className = "servicesLink" title="Services">
               <NavDropdown.Item href="Residential" style ={{color: "#E19B24", backgroundColor: "black"}}>Residential Cleaning</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2" style ={{color: "#E19B24", backgroundColor: "black"}}>Commercial Cleaning</NavDropdown.Item>
             </NavDropdown>

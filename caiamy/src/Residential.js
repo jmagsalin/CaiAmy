@@ -1,15 +1,23 @@
 import React, {Component} from "react"
-import {Card, ListGroup, ListGroupItem, Container, Row, Col} from "react-bootstrap"
+import {Card, ListGroup, ListGroupItem, Container, Row, Col, Jumbotron, Image} from "react-bootstrap"
 
 class Residential extends Component {
     render(){
         return(  
+        <React.Fragment>
           <Container>
              <br></br>
-              <h1>Residential Cleaning</h1>
-              <p className = "aboutText">Our services include general cleaning and maintenance for your homes. Your home will be welcomed 
-                  with the same staff every regularly scheduled clean. Our standard checklist for your 
-                  basic home services are as follows:</p><br></br>
+             <Jumbotron fluid>
+             
+                <Container>
+                <h1>Residential Cleaning</h1><br></br>
+                <p className = "aboutText">Our services include general cleaning and maintenance for your homes. Your home will be welcomed 
+                                with the same staff every regularly scheduled clean. Our standard checklist for your 
+                                basic home services are as follows:</p><br></br>
+                </Container>
+            </Jumbotron>
+                            
+              <div class = "d-flex justify-content-around">
               <Row> 
                   <Col>
                     <Card style={{ width: '18rem', border: "black"}}>
@@ -70,13 +78,15 @@ class Residential extends Component {
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Floors vacuumed and wiped</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Glass doors cleaned</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Ceiling fans dusted</ListGroupItem>
-                    <ListGroupItem className ="cardList" style={{background: "black"}}>Light binds dusting</ListGroupItem>
+                    <ListGroupItem className ="cardList" style={{background: "black"}}>Light binds dusted</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Lampshades dusted</ListGroupItem>
                     </ListGroup>
-                    </Card>
+                    </Card><br></br>
                </Col>
-             </Row><br></br>
+             </Row>
+             </div>
          </Container>
+         </React.Fragment>
      )
         }
 }
