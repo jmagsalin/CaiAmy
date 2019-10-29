@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import {Card, ListGroup, ListGroupItem, Container, Row, Col, Jumbotron, Image} from "react-bootstrap"
+import {Card, ListGroup, ListGroupItem, Container, Row, Col, Jumbotron} from "react-bootstrap"
 
 class Residential extends Component {
     render(){
@@ -12,7 +12,7 @@ class Residential extends Component {
                 <h1>Residential Cleaning</h1>
                 <p className = "aboutText">Our services include general cleaning and maintenance for your homes. Your home will be welcomed 
                                 with the same staff every regularly scheduled clean. Our standard checklist for your 
-                                basic home services are as follows:</p><br></br>
+                                basic home services are listed below</p><br></br>
                 </Container>
             </Jumbotron>
                             
@@ -63,7 +63,7 @@ class Residential extends Component {
                     <Card style={{ width: '18rem', border: "black" }}>
                     <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2014/07/10/17/17/bedroom-389254_1280.jpg" />
                     <Card.Body className = "cardTitle">
-                    <Card.Title className = "cardTitle" style={{height: 25}}>Bedrooms & Common Areas</Card.Title>
+                    <Card.Title className = "cardTitle" style={{height: 25, fontSize: 18}}>Bedrooms & Common Areas Checklist</Card.Title>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                     <ListGroupItem className ="cardList" style={{background: "black"}}>General dusting</ListGroupItem>
@@ -87,7 +87,7 @@ class Residential extends Component {
          
          </React.Fragment>
      )
-        }
+   }
 }
 
 export default Residential;

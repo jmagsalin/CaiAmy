@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Button, Navbar, Nav, Form, NavDropdown, FormControl} from 'react-bootstrap';
+import {Button, Navbar, Nav, Form, NavDropdown, NavLink, FormControl, Dropdown, NavItem} from 'react-bootstrap';
 import Homepage from "./Homepage"
 import About from "./About"
 import Residential from "./Residential"
@@ -13,7 +13,7 @@ render (){
       <React.Fragment>
       <Router>
         <div className = "navBar">
-        <Navbar variant = "dark" expand="lg">  
+        <Navbar className = "dropLink" variant = "dark"  expand="lg">  
             <Navbar.Brand href="Homepage">
             
             <img
@@ -30,10 +30,13 @@ render (){
           <Nav className="mr-auto">
             <Nav.Link href="Homepage" style ={{color: "#E19B24"}}>Home</Nav.Link>
             <Nav.Link href="About" style ={{color: "#E19B24"}}>About</Nav.Link>
-            <NavDropdown  className = "servicesLink" title="Services" style = {{color: "E19B24"}}>
-              <NavDropdown.Item href="Residential" style ={{color: "#E19B24", backgroundColor: "black"}}>Residential Cleaning</NavDropdown.Item>
-              <NavDropdown.Item href="Commercial" style ={{color: "#E19B24", backgroundColor: "black"}}>Commercial Cleaning</NavDropdown.Item>
-            </NavDropdown>
+            <Dropdown as={NavItem}>
+              <Dropdown.Toggle as={Nav.Link} style = {{color: "#E19B24"}}>Services</Dropdown.Toggle>
+              <Dropdown.Menu>
+                <Dropdown.Item href="Residential" style ={{color: "#E19B24", backgroundColor: "black"}}>Residential</Dropdown.Item>
+                <Dropdown.Item href="Commercial" style ={{color: "#E19B24", backgroundColor: "black"}}>Commercial</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>      
             <Nav.Link href="Appointment" style ={{color: "#E19B24"}}>Schedule Appointment</Nav.Link>
           </Nav>
         </Navbar.Collapse>

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Button, Navbar, Nav, Form, NavDropdown, FormControl, Carousel} from 'react-bootstrap';
+import {Carousel} from 'react-bootstrap';
 
 
 class Homepage extends Component {

@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import {Card, ListGroup, ListGroupItem, Container, Row, Col, Jumbotron, Image} from "react-bootstrap"
+import {Card, ListGroup, ListGroupItem, Container, Row, Col, Jumbotron} from "react-bootstrap"
 
 class Commercial extends Component {
     render(){
@@ -19,7 +19,7 @@ class Commercial extends Component {
               <Row> 
                   <Col>
                     <Card style={{ width: '18rem', border: "black"}}>
-                    <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2016/05/26/04/17/home-1416381_1280.jpg" />
+                    <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2015/04/20/06/45/office-730680_1280.jpg" />
                     <Card.Body className = "cardTitle">
                     <Card.Title className = "cardTitle">Kitchen Checklist</Card.Title>     
                     </Card.Body>               
@@ -39,7 +39,7 @@ class Commercial extends Component {
                 </Col>
                 <Col>
                     <Card style={{ width: '18rem', border: "black" }}>
-                    <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2016/10/13/09/08/travel-1737171_1280.jpg" />
+                    <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2014/09/20/08/01/bathroom-453420_1280.png" />
                     <Card.Body className = "cardTitle">
                     <Card.Title className = "cardTitle">Bathroom Checklist</Card.Title>
                     </Card.Body>
@@ -62,7 +62,7 @@ class Commercial extends Component {
                     <Card style={{ width: '18rem', border: "black" }}>
                     <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2019/08/14/15/27/interior-4406045_1280.jpg" />
                     <Card.Body className = "cardTitle">
-                    <Card.Title className = "cardTitle" style={{height: 25}}>Common Areas</Card.Title>
+                    <Card.Title className = "cardTitle" style={{height: 25}}>Common Areas Checklist</Card.Title>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                     <ListGroupItem className ="cardList" style={{background: "black"}}>General dusting</ListGroupItem>

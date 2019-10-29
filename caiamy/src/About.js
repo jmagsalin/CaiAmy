@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container, Row, Col, Button, Navbar, Nav, Form, NavDropdown, FormControl} from 'react-bootstrap';
+import {Container} from 'react-bootstrap';
 
 class About extends Component {
   render(){
