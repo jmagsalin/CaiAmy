@@ -4,6 +4,7 @@ import {Button, Navbar, Nav, Form, NavDropdown, FormControl} from 'react-bootstr
 import Homepage from "./Homepage"
 import About from "./About"
 import Residential from "./Residential"
+import Commercial from "./Commercial"
 
 class Routes extends Component {
 
@@ -24,21 +25,17 @@ render (){
             />
         
             </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" style = {{color: "#E19B24"}}  />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
             <Nav.Link href="Homepage" style ={{color: "#E19B24"}}>Home</Nav.Link>
             <Nav.Link href="About" style ={{color: "#E19B24"}}>About</Nav.Link>
-            <NavDropdown  className = "servicesLink" title="Services">
+            <NavDropdown  className = "servicesLink" title="Services" style = {{color: "E19B24"}}>
               <NavDropdown.Item href="Residential" style ={{color: "#E19B24", backgroundColor: "black"}}>Residential Cleaning</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2" style ={{color: "#E19B24", backgroundColor: "black"}}>Commercial Cleaning</NavDropdown.Item>
+              <NavDropdown.Item href="Commercial" style ={{color: "#E19B24", backgroundColor: "black"}}>Commercial Cleaning</NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#link" style ={{color: "#E19B24"}}>Schedule Appointment</Nav.Link>
+            <Nav.Link href="Appointment" style ={{color: "#E19B24"}}>Schedule Appointment</Nav.Link>
           </Nav>
-          <Form inline>
-            <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-            <Button variant="outline-success">Search</Button>
-          </Form>
         </Navbar.Collapse>
       </Navbar>
       </div>
@@ -47,6 +44,7 @@ render (){
         <Route path="/Homepage" component={Homepage} />
         <Route path="/About" component={About} />
         <Route path="/Residential" component={Residential}/>
+        <Route path= "/Commercial" component={Commercial}/>
       </Switch>     
     </Router>
     <footer className = "footer">
