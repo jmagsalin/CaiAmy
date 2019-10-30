@@ -1,11 +1,19 @@
 import React, {Component} from 'react';
-import {Container} from 'react-bootstrap';
+import {Container, Jumbotron} from 'react-bootstrap';
 
 class About extends Component {
   render(){
     return (
+    <React.Fragment>
+        <Jumbotron fluid className = "aboutJumbotron">
+             
+             <Container>
+             <h1></h1>
+             <p className = "aboutText"></p><br></br>
+             </Container>
+         </Jumbotron>
+                      
      <Container>
-       <br></br>
        <br></br>
       <div className="about">
         <h3 className = "cats">About Our Company...</h3><br></br>
@@ -29,9 +37,10 @@ class About extends Component {
             
         <h4 className = "cats">Consistency</h4>
             <p className = "aboutText">CAIAMY wants to continuously be your service provider. We have our own service check list to make sure we provide 
-            the same high quality services the same way all the time, every time.</p><br></br>
+            the same high quality services the same way all the time, every time.</p><br></br><br></br>
       </div>
      </Container>
+     </React.Fragment>
     )
   }
 }

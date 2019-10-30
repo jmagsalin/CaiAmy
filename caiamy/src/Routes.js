@@ -1,10 +1,11 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Button, Navbar, Nav, Form, NavDropdown, NavLink, FormControl, Dropdown, NavItem} from 'react-bootstrap';
+import {Button, Navbar, Nav, Form, NavLink, FormControl, Dropdown, NavItem} from 'react-bootstrap';
 import Homepage from "./Homepage"
 import About from "./About"
 import Residential from "./Residential"
 import Commercial from "./Commercial"
+import Appointment from "./Appointment"
 
 class Routes extends Component {
 
@@ -13,7 +14,7 @@ render (){
       <React.Fragment>
       <Router>
         <div className = "navBar">
-        <Navbar className = "dropLink" variant = "dark"  expand="lg">  
+        <Navbar variant = "dark"  expand="lg">  
             <Navbar.Brand href="Homepage">
             
             <img
@@ -48,6 +49,7 @@ render (){
         <Route path="/About" component={About} />
         <Route path="/Residential" component={Residential}/>
         <Route path= "/Commercial" component={Commercial}/>
+        <Route path= "/Appointment" component={Appointment}/>
       </Switch>     
     </Router>
     <footer className = "footer">

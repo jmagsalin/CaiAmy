@@ -113,3 +113,29 @@
   background-position-y: center;
   font-weight: bolder;
 }
+
+.aboutJumbotron {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/04/06/51/san-diego-2579198_1280.jpg");
+  color: black;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  font-weight: bolder;
+  height: 290px;
+}
+
+.appJumbotron {
+  background-image: url("https://cdn.pixabay.com/photo/2018/03/01/09/33/business-3190209_1280.jpg");
+  color: black;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  font-weight: bolder;
+  height: 290px;
+}
+
+.testimonials {
+  background-color: black;
+  color: #E19B24;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}

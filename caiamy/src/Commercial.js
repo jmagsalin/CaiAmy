@@ -5,8 +5,7 @@ class Commercial extends Component {
     render(){
         return (
             <React.Fragment>
-            <Jumbotron fluid className ="comJumbotron">
-             
+            <Jumbotron fluid className ="comJumbotron">           
              <Container>
              <h1>Commercial Cleaning</h1>
              <p className = "aboutText">Office cleaning for CAIAMY is simple and affordable. We are a complete cleaning service. 
@@ -14,14 +13,14 @@ class Commercial extends Component {
                                         we offer daily, weekly, bimonthly, monthly, quarterly,
                                         seasonal, and custom scheduled office cleaning services for any size business. </p><br></br>
              </Container>
-         </Jumbotron>
-         <div class = "d-flex justify-content-around" style = {{padding: "20px"}}>
+            </Jumbotron>
+            <div class = "d-flex justify-content-around" style = {{padding: "20px"}}>
               <Row> 
                   <Col>
-                    <Card style={{ width: '18rem', border: "black"}}>
+                    <Card style={{ width: '22rem', border: "black"}}>
                     <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2015/04/20/06/45/office-730680_1280.jpg" />
                     <Card.Body className = "cardTitle">
-                    <Card.Title className = "cardTitle">Kitchen Checklist</Card.Title>     
+                    <Card.Title className = "cardTitle" style = {{ fontWeight: "bold"}}>Kitchen Checklist</Card.Title>     
                     </Card.Body>               
                     <ListGroup className="cardList" style={{background: "black"}}>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>General dusting</ListGroupItem>
@@ -38,10 +37,10 @@ class Commercial extends Component {
                     </Card>
                 </Col>
                 <Col>
-                    <Card style={{ width: '18rem', border: "black" }}>
+                    <Card style={{ width: '22rem', border: "black" }}>
                     <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2014/09/20/08/01/bathroom-453420_1280.png" />
                     <Card.Body className = "cardTitle">
-                    <Card.Title className = "cardTitle">Bathroom Checklist</Card.Title>
+                    <Card.Title className = "cardTitle" style = {{ fontWeight: "bold"}}>Bathroom Checklist</Card.Title>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                     <ListGroupItem className ="cardList" style={{background: "black", border: "orange"}}>General dusting</ListGroupItem>
@@ -59,10 +58,10 @@ class Commercial extends Component {
                     </Card>
                </Col>
                <Col>
-                    <Card style={{ width: '18rem', border: "black" }}>
+                    <Card style={{ width: '22rem', border: "black" }}>
                     <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2019/08/14/15/27/interior-4406045_1280.jpg" />
                     <Card.Body className = "cardTitle">
-                    <Card.Title className = "cardTitle" style={{height: 25}}>Common Areas Checklist</Card.Title>
+                    <Card.Title className = "cardTitle" style={{height: 25, fontWeight: "bold"}}>Common Areas Checklist</Card.Title>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                     <ListGroupItem className ="cardList" style={{background: "black"}}>General dusting</ListGroupItem>
