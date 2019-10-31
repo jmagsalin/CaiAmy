@@ -26,7 +26,9 @@
   background-color: black;
   color:#E19B24;
   
-}.dropLink {
+}
+
+.dropLink {
   background-color: transparent;
   color: #E19B24;
   text-decoration-color: tomato;
@@ -96,7 +98,7 @@
   border-block-color: #E19B24;
 }
 
-.jumbotron {
+.resJumbotron {
   background-image: url("https://cdn.pixabay.com/photo/2015/03/02/12/07/minecraft-655902_1280.png");
   color: white;
   background-size: cover;

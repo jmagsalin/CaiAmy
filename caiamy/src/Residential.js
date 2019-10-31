@@ -6,7 +6,7 @@ class Residential extends Component {
         return(  
         <React.Fragment>
           
-             <Jumbotron fluid>
+             <Jumbotron fluid className = "resJumbotron">
              
                 <Container>
                 <h1>Residential Cleaning</h1>

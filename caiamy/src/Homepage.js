@@ -51,19 +51,18 @@ render (){
 </div>
 <Container>
   <h6 style = {{textAlign: "left"}}>Why Choose CaiAmy?</h6>
-  <h2 style = {{textAlign: "left", color: "#E19B24", fontWeight: "bold"}}>Details Are Key</h2><br></br>
+  <h1 style = {{textAlign: "left", color: "#E19B24", fontWeight: "bold"}}>Details Are Key</h1><br></br>
  
             <p className = "aboutText">Our employees are all industry professionals who work as a team dedicated to ensuring that their service is thorough, 
             complete, and always professional. We place our staff through continuous training to make sure they always maintain 
             the CAIAMY cleaning level of commitment.</p><br></br>
-            <p className = "aboutText">Your peaceful and problem free work and home environment will not stay like this 
-            forever without regular maintenance. Fortunately for you, our janitorial services can ensure 
-            that your home and office will remain an oasis of comfort and professionalism. As a leading provider of residential and commercial 
+            <p className = "aboutText">With regular maintenance, your home and work environment will remain peaceful and problem free.
+            Our janitorial services can ensure that your home and office will remain an oasis of comfort and professionalism. As a leading provider of residential and commercial 
             cleaning services throughout San Diego, we are a company that's dedicated to comprehensive cleaning solutions 
-            for all your janitorial and maintenance needs.  We take pride in servicing your company and our city. </p><br></br>
+            for all your janitorial and maintenance needs.  We take pride in servicing your home, your company, and our city. </p><br></br>
 <Card className = "testimonials">
   <Card.Header style = {{backgroundColor: "#E19B24", color: "black", fontWeight: "bold", fontSize: 20}}>Testimonials</Card.Header>
-  <Card.Body style = {{backgroundColor: "black"}}>
+  <Card.Body style = {{backgroundColor: "black",}}>
     <blockquote className="blockquote mb-0">
       <p>
         {' '}

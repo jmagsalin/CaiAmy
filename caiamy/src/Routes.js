@@ -41,6 +41,24 @@ render (){
             <Nav.Link href="Appointment" style ={{color: "#E19B24"}}>Schedule Appointment</Nav.Link>
           </Nav>
         </Navbar.Collapse>
+        <Navbar.Brand href="https://www.facebook.com/TheBoysTV/" target = "blank">
+        <img
+                alt=""
+                src="https://clipground.com/images/facebook-transparent-clipart-1.png"
+                width="50"
+                height="35"
+                className="d-inline-block align-top"
+            />
+        </Navbar.Brand>
+        <Navbar.Brand href="https://www.instagram.com/theboystv/?hl=en" target = "blank">
+        <img
+                alt=""
+                src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"
+                width="50"
+                height="35"
+                className="d-inline-block align-top"
+            />
+        </Navbar.Brand>
       </Navbar>
       </div>
       <Switch>
