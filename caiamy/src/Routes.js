@@ -44,7 +44,7 @@ render (){
         <Navbar.Brand href="https://www.facebook.com/TheBoysTV/" target = "blank">
         <img
                 alt=""
-                src="https://clipground.com/images/facebook-transparent-clipart-1.png"
+                src="https://www.iconsdb.com/icons/preview/orange/facebook-xxl.png"
                 width="50"
                 height="35"
                 className="d-inline-block align-top"
@@ -53,7 +53,7 @@ render (){
         <Navbar.Brand href="https://www.instagram.com/theboystv/?hl=en" target = "blank">
         <img
                 alt=""
-                src="https://logodownload.org/wp-content/uploads/2017/04/instagram-logo.png"
+                src="http://www.myiconfinder.com/uploads/iconsets/256-256-0213aa8165c20cbbc11e5b6fc91abf64-instagram.png"
                 width="50"
                 height="35"
                 className="d-inline-block align-top"

@@ -141,3 +141,29 @@
   color: #E19B24;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+.schCard {
+  font-size: 20px;
+  text-align: left;
+}
+
+.schCardItem {
+  background-color: black;
+  color: #E19B24;
+}
+
+.schHr {
+  color: black;
+  background-color: black;
+  
+}
+
+.appColList {
+  border-spacing: 20px;
+  list-style: outside;
+}
+
+.appBr {
+  display: block;
+  margin-top: 10px;
+}
