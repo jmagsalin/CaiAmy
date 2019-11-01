@@ -13,7 +13,7 @@ class Appointment extends Component {
              </Container>
          </Jumbotron>
          <Container>
-         <h1 style = {{color: "#E19B24", textAlign: "left", fontWeight: "bold"}}>Schedule Appointment</h1>
+         <h1 style = {{color: "#E19B24", textAlign: "left", fontWeight: "bold"}}>Schedule An Appointment</h1>
          <p style = {{textAlign: "left", fontSize: 25}}>Give us a call and ask for a free over the phone estimate!</p>
          <hr className = "schHr"></hr>
          <Row>
@@ -32,7 +32,7 @@ class Appointment extends Component {
                 <h2 style = {{color: "#E19B24"}}>About Our Services</h2>
                 <li className = "appColList">Customized service, 7 days a week</li>
                 <li>Fully insured and bonded</li>
-                <li>Environmentaly friendly products</li>
+                <li>Environmentally friendly products</li>
                 <li>Quality trained, supervised, and uniformed employees</li>
             </Col>
         </Row>
