@@ -55,7 +55,7 @@ render (){
  
             <p className = "aboutText">Our employees are all industry professionals who work as a team dedicated to ensuring that their service is thorough, 
             complete, and always professional. We place our staff through continuous training to make sure they always maintain 
-            the CAIAMY cleaning level of commitment.</p><br></br>
+            the CaiAmy cleaning level of commitment.</p><br></br>
             <p className = "aboutText">With regular maintenance, your home and work environment will remain peaceful and problem free.
             Our janitorial services can ensure that your home and office will remain an oasis of comfort and professionalism. As a leading provider of residential and commercial 
             cleaning services throughout San Diego, we are a company that's dedicated to comprehensive cleaning solutions 
@@ -79,7 +79,7 @@ render (){
     <blockquote className="blockquote mb-0">
       <p>
         {' '}
-        “People have been complimenting my bathroom nonstop since CAIAMY remodeled it last year.
+        “People have been complimenting my bathroom nonstop since CaiAmy remodeled it last year.
          They are one of PQ’s finest.”{' '}
       </p>
       <footer className="blockquote-footer" style = {{color: "white"}}>
@@ -91,8 +91,8 @@ render (){
     <blockquote className="blockquote mb-0">
       <p>
         {' '}
-        “I’ve been hiring the CAIAMY and CO for years. They’ve done a great job with my home and I am very pleased. 
-        There’s nothing that CAIAMY can’t do.”{' '}
+        “I’ve been hiring CaiAmy Industries for years. They’ve done a great job with my home and I am very pleased. 
+        There’s nothing that CaiAmy can’t do.”{' '}
       </p>
       <footer className="blockquote-footer" style = {{color: "white"}}>
          <cite title="Source Title">Arthur Jenes</cite>

@@ -44,7 +44,7 @@ class Commercial extends Component {
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                     <ListGroupItem className ="cardList" style={{background: "black", border: "orange"}}>General dusting</ListGroupItem>
-                    <ListGroupItem className ="cardList" style={{background: "black"}}>Bathtubs and showers cleaned</ListGroupItem>
+                    <ListGroupItem className ="cardList" style={{background: "black"}}>Showers cleaned</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Sinks and vanity cleaned</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Toilets disinfected and cleaned</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Mirrors cleaned</ListGroupItem>
@@ -69,7 +69,7 @@ class Commercial extends Component {
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Trashcan exterior wiped</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Window sills wiped</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Mirrors cleaned</ListGroupItem>
-                    <ListGroupItem className ="cardList" style={{background: "black"}}>Lights general straightening</ListGroupItem>
+                    <ListGroupItem className ="cardList" style={{background: "black"}}>Lights straightened</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Disinfect surfaces</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Floors vacuumed and wiped</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Glass doors cleaned</ListGroupItem>

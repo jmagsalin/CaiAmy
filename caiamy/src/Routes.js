@@ -41,7 +41,7 @@ render (){
             <Nav.Link href="Appointment" style ={{color: "#E19B24"}}>Schedule Appointment</Nav.Link>
           </Nav>
         </Navbar.Collapse>
-        <Navbar.Brand href="https://www.facebook.com/TheBoysTV/" target = "blank">
+        <Navbar.Brand href="https://www.facebook.com/kaoathletics/" target = "blank">
         <img
                 alt=""
                 src="https://www.iconsdb.com/icons/preview/orange/facebook-xxl.png"
@@ -50,7 +50,7 @@ render (){
                 className="d-inline-block align-top"
             />
         </Navbar.Brand>
-        <Navbar.Brand href="https://www.instagram.com/theboystv/?hl=en" target = "blank">
+        <Navbar.Brand href="https://www.instagram.com/kaobasketball/?hl=en" target = "blank">
         <img
                 alt=""
                 src="http://www.myiconfinder.com/uploads/iconsets/256-256-0213aa8165c20cbbc11e5b6fc91abf64-instagram.png"

@@ -19,12 +19,10 @@ class Appointment extends Component {
          <Row>
              <Col>
                 <Card style={{ width: '30rem' }} className="schCard">
-                    <Card.Header style = {{backgroundColor: "#E19B24", fontWeight: "bold"}}>CaiAmy Contact</Card.Header>
+                    <Card.Header style = {{backgroundColor: "#E19B24", fontWeight: "bold"}}>CaiAmy Contacts</Card.Header>
                     <ListGroup className = "schCardItem">
                         <ListGroup.Item style = {{backgroundColor: "black"}}>(858) 692-6819</ListGroup.Item>
-                        <ListGroup.Item style = {{backgroundColor: "black"}}>7875 Highlands Village Pl.</ListGroup.Item>
-                        <ListGroup.Item style = {{backgroundColor: "black"}}>Ste B102-420</ListGroup.Item>        
-                        <ListGroup.Item style = {{backgroundColor: "black"}}>San Diego, CA 92129</ListGroup.Item>
+                        <ListGroup.Item style = {{backgroundColor: "black"}}>Travon@caiamyindustries.com</ListGroup.Item>
                     </ListGroup>
                 </Card>
             </Col>

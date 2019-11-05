@@ -72,7 +72,7 @@ class Residential extends Component {
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Trashcan exterior wiped</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Window sills wiped</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Mirrors cleaned</ListGroupItem>
-                    <ListGroupItem className ="cardList" style={{background: "black"}}>Lights general straightening</ListGroupItem>
+                    <ListGroupItem className ="cardList" style={{background: "black"}}>Lights straightened</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Disinfect surfaces</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Floors vacuumed and wiped</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Glass doors cleaned</ListGroupItem>
