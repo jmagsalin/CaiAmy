@@ -1,5 +1,6 @@
 import React, {Component} from "react"
 import {Card, ListGroup, ListGroupItem, Container, Row, Col, Jumbotron} from "react-bootstrap"
+import Email from "./Email"
 
 class Appointment extends Component {
     render(){
@@ -33,6 +34,9 @@ class Appointment extends Component {
                 <li>Environmentally friendly products</li>
                 <li>Quality trained, supervised, and uniformed employees</li>
             </Col>
+        </Row><br></br><hr className = "schHr"></hr>
+        <Row>
+            <Email/>
         </Row>
          </Container><br></br>
          </React.Fragment>
