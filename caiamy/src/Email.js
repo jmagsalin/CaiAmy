@@ -1,26 +1,30 @@
 import React, {Component} from 'react';
 import {Button, Form, FormControl, FormGroup, Row, Col, Container} from 'react-bootstrap';
 import * as emailjs from 'emailjs-com'
+import {Redirect} from 'react-router-dom'
 
 class Email extends Component {
     constructor(){
-        super()  
+        super()
             this.state = {
                 name: '',
                 email: '',
+                phone: '',
                 message: '',
-                
+                success: undefined,
             }
+        }   
         
-        }
 
-        handleSubmit(e) {
-            // e.preventDefault()
-            const { name, email, message } = this.state
+        handleSubmit = (e) => {
+             e.preventDefault()
+            
+            const { name, email, message, phone, success } = this.state
             let templateParams = {
               from_name: name,
               to_name: 'sinestro542@gmail.com',
               message_html: message,
+              phone_number: phone,
               email_address: email,
              }
              emailjs.send(
@@ -29,13 +33,16 @@ class Email extends Component {
                templateParams,
               'user_XmvdS0u8OayF13t06x7dp'
              )
-            //  this.resetForm()
+             let redirect = success === undefined ? true : false
+             this.setState({ success: redirect })
+             this.resetForm()
          }
         
          resetForm() {
             this.setState({
               name: '',
               email: '',
+              phone: '',
               message: '',
             })
           }
@@ -45,6 +52,7 @@ class Email extends Component {
           }
 
     render(){
+        const { success } = this.state
         return(
             <React.Fragment>
             <Container>
@@ -79,6 +87,19 @@ class Email extends Component {
                         </FormGroup>
                     </Col>
                 </Row>    
+                <Row>   
+                    <Col xs={5}>
+                        <FormGroup controlId="formBasicEmail">
+                        <label style = {{fontWeight: "bold", fontSize: 20}}>Phone</label>
+                                <FormControl
+                                type="text"
+                                name="phone"
+                                onChange={this.handleChange.bind(this, 'phone')}
+                                value={this.state.phone}
+                                />
+                        </FormGroup>
+                    </Col>
+                </Row>   
                 <Row>    
                     <Col>
                         <FormGroup controlId="formBasicMessage">
@@ -100,14 +121,22 @@ class Email extends Component {
                     style = {{backgroundColor: "black"}}
                     className = "footerb" 
                     size = "large"
-                    onClick = { this.handleSubmit() }
+                    onClick = { this.handleSubmit }
                 >Submit</Button>
                         
                 </Form>
                 <br></br>
                 
     	        </body>
+                {success === true &&
+                <h2 style = {{textAlign: "left", color: "#E19B24" }}>Form Submitted!</h2> 
+                }
+                {success === false &&
+                <h2 style = {{textAlign: "left", color: "#E19B24" }}>Please resubmit form!</h2>
+                }
     	        </Container>
+                    
+                    
             </React.Fragment>
         )
     }
