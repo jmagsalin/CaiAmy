@@ -80,23 +80,6 @@ class Commercial extends Component {
                     </ListGroup>
                     </Card><br></br>
                </Col>
-               <Col>
-                    <Card style={{ width: '15rem', border: "black" }}>
-                    <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2016/07/22/19/06/marina-1535571_1280.jpg" />
-                    <Card.Body className = "cardTitle">
-                    <Card.Title className = "cardTitle" style={{height: 25, fontWeight: "bold", fontSize: 18}}>Parking Structure Checklist</Card.Title>
-                    </Card.Body>
-                    <ListGroup className="cardList" style={{background: "black"}}>
-                    <ListGroupItem className ="cardList" style={{background: "black"}}>General dusting</ListGroupItem>
-                    <ListGroupItem className ="cardList" style={{background: "black"}}>Wipe all surfaces</ListGroupItem>
-                    <ListGroupItem className ="cardList" style={{background: "black"}}>Trash emptied</ListGroupItem>
-                    <ListGroupItem className ="cardList" style={{background: "black"}}>Trashcan exterior wiped</ListGroupItem>
-                    <ListGroupItem className ="cardList" style={{background: "black"}}>Window sills wiped</ListGroupItem>
-                    <ListGroupItem className ="cardList" style={{background: "black"}}>Floors cleaned</ListGroupItem>
-                    <ListGroupItem className ="cardList" style={{background: "black"}}>General maintenance</ListGroupItem>
-                    </ListGroup>
-                    </Card>
-                </Col>
                 <Col>
                     <Card style={{ width: '15rem', border: "black" }}>
                     <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_1280.jpg" />
@@ -116,6 +99,23 @@ class Commercial extends Component {
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Ceiling fans dusted</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Light binds dusted</ListGroupItem>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>Lampshades dusted</ListGroupItem>
+                    </ListGroup>
+                    </Card>
+                </Col>
+                <Col>
+                    <Card style={{ width: '15rem', border: "black" }}>
+                    <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2016/07/22/19/06/marina-1535571_1280.jpg" />
+                    <Card.Body className = "cardTitle">
+                    <Card.Title className = "cardTitle" style={{height: 25, fontWeight: "bold", fontSize: 18}}>Parking Structure Checklist</Card.Title>
+                    </Card.Body>
+                    <ListGroup className="cardList" style={{background: "black"}}>
+                    <ListGroupItem className ="cardList" style={{background: "black"}}>General dusting</ListGroupItem>
+                    <ListGroupItem className ="cardList" style={{background: "black"}}>Wipe all surfaces</ListGroupItem>
+                    <ListGroupItem className ="cardList" style={{background: "black"}}>Trash emptied</ListGroupItem>
+                    <ListGroupItem className ="cardList" style={{background: "black"}}>Trashcan exterior wiped</ListGroupItem>
+                    <ListGroupItem className ="cardList" style={{background: "black"}}>Window sills wiped</ListGroupItem>
+                    <ListGroupItem className ="cardList" style={{background: "black"}}>Floors cleaned</ListGroupItem>
+                    <ListGroupItem className ="cardList" style={{background: "black"}}>General maintenance</ListGroupItem>
                     </ListGroup>
                     </Card>
                 </Col>
