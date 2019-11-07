@@ -167,3 +167,20 @@
   display: block;
   margin-top: 10px;
 }
+
+.textArea {
+  height: 20px;
+}
+
+.formButton {
+  background-color: black;
+}
+
+.formBack {
+  background: linear-gradient(#E19B24, black);
+  color: black;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  font-weight: bolder;
+}

@@ -6,6 +6,7 @@ import About from "./About"
 import Residential from "./Residential"
 import Commercial from "./Commercial"
 import Appointment from "./Appointment"
+import Email from "./Email"
 
 class Routes extends Component {
 
@@ -68,6 +69,7 @@ render (){
         <Route path="/Residential" component={Residential}/>
         <Route path= "/Commercial" component={Commercial}/>
         <Route path= "/Appointment" component={Appointment}/>
+        <Route path= "/Email" component={Email}/>
       </Switch>     
     </Router>
     <footer className = "footer">
