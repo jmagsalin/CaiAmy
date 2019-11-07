@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "emailjs-com": "^2.4.0"
+  }
+}
