@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Button, Form, FormControl, FormGroup, Row, Col, Container} from 'react-bootstrap';
 import * as emailjs from 'emailjs-com'
-import {Redirect} from 'react-router-dom'
 
 class Email extends Component {
     constructor(){
@@ -15,7 +14,6 @@ class Email extends Component {
             }
         }   
         
-
         handleSubmit = (e) => {
              e.preventDefault()
             
@@ -59,28 +57,29 @@ class Email extends Component {
             <body>
             <h1 style = {{color: "#E19B24", textAlign: "left", fontWeight: "bold"}}>Leave a Message</h1>
             <p style = {{textAlign: "left", fontSize: 25}}>We'll get back to you as quickly as possible</p>
-                <Form onSubmit={this.handleSubmit.bind(this)}>
+                <Form onSubmit={this.handleSubmit.bind(this)} className = "formBack">
                 <Row>
-                    <Col xs={5}>
+                    <Col xs={3}>
                         <FormGroup controlId="formBasicName">
-                        <label style = {{fontWeight: "bold", fontSize: 20}}>Name</label>
+                        <label style = {{fontWeight: "bold", fontSize: 20, color: "black"}}>Name</label>
                             <FormControl
                                 type="text"
                                 name="name"
+                                style = {{borderColor: "black"}}
                                 onChange={this.handleChange.bind(this, 'name')}
                                 value={this.state.name}
                                 />
                         </FormGroup>
                     </Col>    
-                </Row>
-                    
+                </Row>         
                 <Row>   
-                    <Col xs={5}>
+                    <Col xs={3}>
                         <FormGroup controlId="formBasicEmail">
-                        <label style = {{fontWeight: "bold", fontSize: 20}}>Email</label>
+                        <label style = {{fontWeight: "bold", fontSize: 20, color: "black"}}>Email</label>
                                 <FormControl
                                 type="email"
                                 name="email"
+                                style = {{borderColor: "black"}}
                                 onChange={this.handleChange.bind(this, 'email')}
                                 value={this.state.email}
                                 />
@@ -88,12 +87,13 @@ class Email extends Component {
                     </Col>
                 </Row>    
                 <Row>   
-                    <Col xs={5}>
+                    <Col xs={3}>
                         <FormGroup controlId="formBasicEmail">
-                        <label style = {{fontWeight: "bold", fontSize: 20}}>Phone</label>
+                        <label style = {{fontWeight: "bold", fontSize: 20, color: "black"}}>Phone</label>
                                 <FormControl
-                                type="text"
+                                type="phone"
                                 name="phone"
+                                style = {{borderColor: "black"}}
                                 onChange={this.handleChange.bind(this, 'phone')}
                                 value={this.state.phone}
                                 />
@@ -101,14 +101,14 @@ class Email extends Component {
                     </Col>
                 </Row>   
                 <Row>    
-                    <Col>
+                    <Col xs = {6}>
                         <FormGroup controlId="formBasicMessage">
-                        <label style = {{fontWeight: "bold", fontSize: 20}}>Message</label>
+                        <label style = {{fontWeight: "bold", fontSize: 20, color: "black"}}>Message</label>
                                 <FormControl
+                                as = "textarea"
                                 className="textArea"
-                                rows="3"
-                                // cols="10"
-                                type="textbox"
+                                style = {{borderColor: "black"}}
+                                type="text"
                                 name="message"
                                 onChange={this.handleChange.bind(this, 'message')}
                                 value={this.state.message}
@@ -117,26 +117,20 @@ class Email extends Component {
                     </Col>     
                 </Row> <br></br> 
                 <Button  
-                    variant="outline-warning" 
-                    style = {{backgroundColor: "black"}}
+                    variant="outline-warning"
+                    style = {{borderColor: "#E19B24", fontWeight: "bold"}}
                     className = "footerb" 
                     size = "large"
                     onClick = { this.handleSubmit }
                 >Submit</Button>
-                        
-                </Form>
-                <br></br>
-                
-    	        </body>
+                <h3>''</h3>  
                 {success === true &&
-                <h2 style = {{textAlign: "left", color: "#E19B24" }}>Form Submitted!</h2> 
-                }
-                {success === false &&
-                <h2 style = {{textAlign: "left", color: "#E19B24" }}>Please resubmit form!</h2>
-                }
-    	        </Container>
-                    
-                    
+                <h2 style = {{textAlign: "left", color: "#E19B24", outlineColor: "#E19B24" }}>Form Submitted!</h2>
+                } 
+                </Form>
+                <br></br>              
+    	        </body>         
+    	        </Container>               
             </React.Fragment>
         )
     }

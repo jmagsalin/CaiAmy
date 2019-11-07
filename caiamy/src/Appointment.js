@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import {Card, ListGroup, ListGroupItem, Container, Row, Col, Jumbotron} from "react-bootstrap"
+import {Card, ListGroup, Container, Row, Col, Jumbotron} from "react-bootstrap"
 import Email from "./Email"
 
 class Appointment extends Component {
@@ -14,7 +14,7 @@ class Appointment extends Component {
              </Container>
          </Jumbotron>
          <Container>
-         <h1 style = {{color: "#E19B24", textAlign: "left", fontWeight: "bold"}}>Schedule An Appointment</h1>
+         <h1 style = {{color: "#E19B24", textAlign: "left", fontWeight: "bold"}}>Schedule an Appointment</h1>
          <p style = {{textAlign: "left", fontSize: 25}}>Give us a call and ask for a free over the phone estimate!</p>
          <hr className = "schHr"></hr>
          <Row>
