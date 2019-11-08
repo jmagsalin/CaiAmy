@@ -122,8 +122,8 @@ class Email extends Component {
                     className = "footerb" 
                     size = "large"
                     onClick = { this.handleSubmit }
-                >Submit</Button>
-                <h3>''</h3>  
+                    >Submit</Button>
+                <h3>'</h3>
                 {success === true &&
                 <h2 style = {{textAlign: "left", color: "#E19B24", outlineColor: "#E19B24" }}>Form Submitted!</h2>
                 } 

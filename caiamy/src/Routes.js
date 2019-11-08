@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Button, Navbar, Nav, Form, NavLink, FormControl, Dropdown, NavItem} from 'react-bootstrap';
+import {Button, Navbar, Nav, Dropdown, NavItem} from 'react-bootstrap';
 import Homepage from "./Homepage"
 import About from "./About"
 import Residential from "./Residential"
 import Commercial from "./Commercial"
 import Appointment from "./Appointment"
-import Email from "./Email"
+import Caiamy from "./caiamy-white.jpg"
 
 class Routes extends Component {
 
@@ -20,7 +20,7 @@ render (){
             
             <img
                 alt=""
-                src="https://images.squarespace-cdn.com/content/5ba145d73e2d09c1cea74e0f/1552208483166-JZ0BOAIBBKTRKSR9JH5X/caiamy-white.jpg?format=1000w&content-type=image%2Fjpeg"
+                src={Caiamy}
                 width="220"
                 height="75"
                 className="d-inline-block align-top"
@@ -69,7 +69,6 @@ render (){
         <Route path="/Residential" component={Residential}/>
         <Route path= "/Commercial" component={Commercial}/>
         <Route path= "/Appointment" component={Appointment}/>
-        <Route path= "/Email" component={Email}/>
       </Switch>     
     </Router>
     <footer className = "footer">
@@ -82,7 +81,7 @@ render (){
               >Schedule an Appointment</Button><br></br>
       <img
               alt=""
-              src="https://images.squarespace-cdn.com/content/5ba145d73e2d09c1cea74e0f/1552208483166-JZ0BOAIBBKTRKSR9JH5X/caiamy-white.jpg?format=1000w&content-type=image%2Fjpeg"
+              src={Caiamy}
               width="220"
               height="75"
               className="d-inline-block align-top"
