@@ -21,7 +21,7 @@ class Commercial extends Component {
                     <Card style={{ width: '15rem', border: "black"}}>
                     <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2015/04/20/06/45/office-730680_1280.jpg" />
                     <Card.Body className = "cardTitle">
-                    <Card.Title className = "cardTitle" style = {{ fontWeight: "bold"}}>Kitchen Checklist</Card.Title>     
+                    <Card.Title className = "cardTitle" style = {{height: 25, fontSize: 18, fontWeight: "bold"}}>Kitchen Checklist</Card.Title>     
                     </Card.Body>               
                     <ListGroup className="cardList" style={{background: "black"}}>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>General dusting</ListGroupItem>
@@ -41,7 +41,7 @@ class Commercial extends Component {
                     <Card style={{ width: '15rem', border: "black" }}>
                     <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2014/09/20/08/01/bathroom-453420_1280.png" />
                     <Card.Body className = "cardTitle">
-                    <Card.Title className = "cardTitle" style = {{ fontWeight: "bold"}}>Bathroom Checklist</Card.Title>
+                    <Card.Title className = "cardTitle" style = {{height: 25, fontSize: 18, fontWeight: "bold"}}>Bathroom Checklist</Card.Title>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                     <ListGroupItem className ="cardList" style={{background: "black", border: "orange"}}>General dusting</ListGroupItem>
@@ -84,7 +84,7 @@ class Commercial extends Component {
                     <Card style={{ width: '15rem', border: "black" }}>
                     <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2015/04/20/06/46/office-730681_1280.jpg" />
                     <Card.Body className = "cardTitle">
-                    <Card.Title className = "cardTitle" style={{height: 25, fontWeight: "bold"}}>Office Checklist</Card.Title>
+                    <Card.Title className = "cardTitle" style={{height: 25, fontSize: 18, fontWeight: "bold"}}>Office Checklist</Card.Title>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                     <ListGroupItem className ="cardList" style={{background: "black"}}>General dusting</ListGroupItem>

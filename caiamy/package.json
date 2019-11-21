@@ -2,6 +2,7 @@
   "name": "caiamy",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://caiamyindustries.com",
   "engines": {
     "npm": "6.9.0",
     "node": "12.1.0"

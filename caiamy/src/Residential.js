@@ -22,7 +22,7 @@ class Residential extends Component {
                     <Card style={{ width: '22rem', border: "black"}}>
                     <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2016/05/26/04/17/home-1416381_1280.jpg" />
                     <Card.Body className = "cardTitle">
-                    <Card.Title className = "cardTitle" style = {{ fontWeight: "bold"}}>Kitchen Checklist</Card.Title>     
+                    <Card.Title className = "cardTitle" style = {{height: 25, fontSize: 18, fontWeight: "bold"}}>Kitchen Checklist</Card.Title>     
                     </Card.Body>               
                     <ListGroup className="cardList" style={{background: "black"}}>
                     <ListGroupItem className ="cardList" style={{background: "black"}}>General dusting</ListGroupItem>
@@ -42,7 +42,7 @@ class Residential extends Component {
                     <Card style={{ width: '22rem', border: "black" }}>
                     <Card.Img variant="top" height ={230} src="https://cdn.pixabay.com/photo/2016/10/13/09/08/travel-1737171_1280.jpg" />
                     <Card.Body className = "cardTitle">
-                    <Card.Title className = "cardTitle" style = {{ fontWeight: "bold"}}>Bathroom Checklist</Card.Title>
+                    <Card.Title className = "cardTitle" style = {{height: 25, fontSize: 18, fontWeight: "bold"}}>Bathroom Checklist</Card.Title>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                     <ListGroupItem className ="cardList" style={{background: "black", border: "orange"}}>General dusting</ListGroupItem>

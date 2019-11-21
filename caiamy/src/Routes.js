@@ -45,7 +45,7 @@ render (){
         <Navbar.Brand href="https://www.facebook.com/kaoathletics/" target = "blank">
         <img
                 alt=""
-                src="https://www.iconsdb.com/icons/preview/orange/facebook-xxl.png"
+                src="https://www.shareicon.net/data/128x128/2015/08/31/93965_facebook_484x484.png"
                 width="50"
                 height="35"
                 className="d-inline-block align-top"
